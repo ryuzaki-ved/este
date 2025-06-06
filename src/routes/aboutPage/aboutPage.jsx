@@ -4,14 +4,14 @@ function AboutPage() {
   return (
     <div className="aboutPage">
       <div className="hero">
-        <h1>About LamaEstate</h1>
+        <h1>About RealEstate</h1>
         <p>Your Trusted Partner in Real Estate Since 2010</p>
       </div>
       <div className="content">
         <div className="section">
           <h2>Our Story</h2>
           <p>
-            Founded in 2010, LamaEstate has grown from a small local agency to one of the UK's most trusted real estate companies. Our journey has been built on the foundation of trust, expertise, and unwavering commitment to our clients.
+            Founded in 2010, RealEstate has grown from a small local agency to one of the UK's most trusted real estate companies. Our journey has been built on the foundation of trust, expertise, and unwavering commitment to our clients.
           </p>
         </div>
         <div className="stats">

@@ -42,7 +42,7 @@ function ContactPage() {
               <img src="/chat.png" alt="Email" />
               <div>
                 <h3>Email Us</h3>
-                <p>info@lamaestate.com</p>
+                <p>info@realestate.com</p>
               </div>
             </div>
             

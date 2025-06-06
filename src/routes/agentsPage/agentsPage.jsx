@@ -8,7 +8,7 @@ const agents = [
     image: "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg",
     experience: "10+ years",
     specialization: "Luxury Properties",
-    email: "sarah.j@lamaestate.com",
+    email: "sarah.j@realestate.com",
     phone: "+44 123 456 7891"
   },
   {
@@ -18,7 +18,7 @@ const agents = [
     image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
     experience: "8+ years",
     specialization: "Commercial Real Estate",
-    email: "michael.c@lamaestate.com",
+    email: "michael.c@realestate.com",
     phone: "+44 123 456 7892"
   },
   {
@@ -28,7 +28,7 @@ const agents = [
     image: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg",
     experience: "12+ years",
     specialization: "Residential Properties",
-    email: "emma.t@lamaestate.com",
+    email: "emma.t@realestate.com",
     phone: "+44 123 456 7893"
   },
   {
@@ -38,7 +38,7 @@ const agents = [
     image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg",
     experience: "15+ years",
     specialization: "Investment Properties",
-    email: "james.w@lamaestate.com",
+    email: "james.w@realestate.com",
     phone: "+44 123 456 7894"
   }
 ];
