@@ -1,0 +1,110 @@
+.contactPage {
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  overflow-y: auto;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 20px;
+
+    .info {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+      }
+
+      .contactDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .detail {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            background-color: #fece51;
+            border-radius: 50%;
+          }
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #333;
+          }
+
+          p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .formContainer {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .formGroup {
+          input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+
+            &:focus {
+              outline: none;
+              border-color: #fece51;
+            }
+          }
+
+          textarea {
+            height: 150px;
+            resize: vertical;
+          }
+        }
+
+        button {
+          padding: 15px 30px;
+          background-color: #fece51;
+          border: none;
+          border-radius: 5px;
+          color: #333;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: darken(#fece51, 10%);
+          }
+        }
+      }
+    }
+  }
+}

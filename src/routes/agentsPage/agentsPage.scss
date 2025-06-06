@@ -1,0 +1,132 @@
+.agentsPage {
+  height: 100%;
+  padding: 50px 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .agentsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .agentCard {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+
+      .imageContainer {
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 50%;
+          background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+
+      .info {
+        padding: 25px;
+
+        h2 {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 5px;
+        }
+
+        h3 {
+          font-size: 16px;
+          color: #666;
+          margin-bottom: 20px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #eee;
+        }
+
+        .details {
+          margin-bottom: 25px;
+
+          p {
+            margin: 12px 0;
+            color: #666;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            strong {
+              color: #333;
+              min-width: 120px;
+            }
+          }
+        }
+
+        .contactButton {
+          width: 100%;
+          padding: 15px;
+          background-color: #fece51;
+          border: none;
+          border-radius: 8px;
+          color: #333;
+          font-weight: bold;
+          font-size: 16px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #e5b73c;
+            transform: translateY(-2px);
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
